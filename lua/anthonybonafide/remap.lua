@@ -1,15 +1,15 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>dl", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>dl", vim.cmd.Ex, {desc = "Open Directory Listing NetRW"})
 
 -- Move higlighted text up and down and also formatting as text is moved, like
 -- in an if statement
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", {desc = "Move highlighted text up"})
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv",{desc = "Move highlighted text down"})
 
 -- Enhances regular NVIM J which appends the line after the current one to the
 -- current line. However, this keeps the cursor at the front of the line rather
 -- continously moving to the end of the line during sucessive uses.
-vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("n", "J", "mzJ`z",{desc = "Append next line to current line"})
 -- Half page jumping like usual but keep cursor in middle of screen for less
 -- disorientation
 vim.keymap.set("n", "<C-d>", "<C-d>zz")

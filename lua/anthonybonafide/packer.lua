@@ -71,4 +71,5 @@ return require('packer').startup(function(use)
 
     use 'mfussenegger/nvim-dap'
     use 'leoluz/nvim-dap-go' -- Install the plugin with Packer
+    use 'rcarriga/nvim-dap-ui'
  end)
